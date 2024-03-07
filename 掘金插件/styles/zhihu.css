@@ -1,0 +1,13 @@
+.Favlists-items {
+  max-height: 72vh !important;
+  margin-bottom: 10px !important;
+}
+.Favlists-item {
+  padding-right: 14px !important;
+}
+.Modal-title {
+  margin-top: 20px !important;
+}
+.Modal-content {
+  padding: 0 24px 10px !important;
+}

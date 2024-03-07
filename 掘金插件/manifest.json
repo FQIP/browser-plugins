@@ -1,0 +1,25 @@
+{
+  "name": "掘金插件",
+  "description": "用于解决掘金收藏夹可视区域高度过小的问题",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "48": "img/collection.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://juejin.cn/*"],
+      "css": ["styles/juejin.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://zhuanlan.zhihu.com/*"],
+      "css": ["styles/zhihu.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "options_page": "html/options.html",
+  "action": {
+    "default_popup": "html/popup.html"
+  }
+}
